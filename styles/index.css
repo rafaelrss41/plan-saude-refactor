@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+
+
+/*=====header===== */
 *{
   margin:0;
   padding: 0;
@@ -9,7 +12,6 @@
 }
 
 body{
-  min-height: 100vh;
   background: #fff;
 }
 
@@ -21,7 +23,11 @@ header {
   color: #32CD32;
   position: relative;
   padding-top: 20px;
-  height: 220px;
+  height: 190px;
+  text-align: center;
+  background: url(../images/back.png);
+  z-index: 0;
+
 }
 header h1{
   position: relative;
@@ -143,11 +149,10 @@ header h1{
   border-radius: 15px;
   transform: translateY(20px);
   padding: 2px 10px;
-  background: #;
   box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
   inset -3px -3px 5px rgba(0,0,0,0.5);
-  transition: 0.5;
-  transition-delay: 0s;
+  transition: 0.5s;
+  transition-delay: 0;
 }
 
 .links li.active a  .text{
@@ -156,6 +161,7 @@ header h1{
   transition-delay: 0.2s;
 }
 
+/*======banner======*/
 .banner{
   display: flex;
   align-items: center;
@@ -178,4 +184,32 @@ header h1{
   color: #2E8B57;
   letter-spacing: 1px;
   padding: 40px;
+}
+
+
+.about{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 740px;
+  padding:  60px 25px;
+  text-align: center;
+}
+.about h2{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about p{
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.content-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #32CD32;
+  position: relative;
+  padding-top: 6px;
 }
